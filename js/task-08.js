@@ -7,13 +7,13 @@ formEl.addEventListener('submit', event => {
 
   if (email.value === '' || password.value === '') {
     alert('Please fill in all the fields!');
+  } else {
+    const formValues = {
+      email: email.value,
+      password: password.value,
+    };
+
+    console.log(formValues);
+    formEl.reset();
   }
-
-  const formValues = {
-    email: email.value,
-    password: password.value,
-  };
-
-  console.log(formValues);
-  formEl.reset();
 });
