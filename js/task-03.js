@@ -19,9 +19,3 @@ for (const image of images) {
   imageMarkup.push(`<li> <img width='500px' src=${image.url} alt=${image.alt} /> </li>`);
 }
 galleryEl.insertAdjacentHTML('afterbegin', imageMarkup.join(''));
-
-galleryEl.style.listStyleType = 'none';
-galleryEl.style.display = 'flex';
-galleryEl.style.gap = '20px';
-galleryEl.style.flexWrap = 'wrap';
-galleryEl.style.justifyContent = 'center';
