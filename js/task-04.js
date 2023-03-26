@@ -4,11 +4,9 @@ const valueEl = document.getElementById('value');
 let counterValue = 0;
 
 btnMinusEl.addEventListener('click', () => {
-  counterValue -= 1;
-  valueEl.innerText = counterValue;
+  valueEl.innerText = --counterValue;
 });
 
 btnPlusEl.addEventListener('click', () => {
-  counterValue += 1;
-  valueEl.innerText = counterValue;
+  valueEl.innerText = ++counterValue;
 });
